@@ -11,30 +11,23 @@ const OneModal = () => {
               style={{
                 fontWeight: "500",
                 textAlign: "center",
+                marginBottom: "-30px"
               }}
             >
               Восстановление <br />
               пароля
             </h1>
-            <p>
-              На Email, который вы зарегистрировали учетную запись будет
-              отправлена ссылка для сброса пароля.
-            </p>
+            <h6 className={styles.title}>
+              На Email, который вы зарегистрировали <br/>учетную запись будет
+              отправлена ссылка <br/>для сброса пароля.
+            </h6>
             <input
               className={styles.input_style}
               type="text"
               placeholder="Почта"
             />
-            <div className={styles.line}>
-              <input type="checkbox" />
-              <p className={styles.sogl}>
-                Я согласен с условиями обслуживания <br />и политикой
-                конфиденциальности.
-              </p>
-            </div>
-            <button className={styles.login_button}>Зарегистрироваться</button>
-            <p className={styles.no_title}>
-              Уже есть аккаунт? <span className={styles.no_main}>Войти</span>
+            <button className={styles.login_button}>Сбросить пароль</button>
+            <p className={styles.no_title}><span className={styles.no_main}>Назад к логину</span>
             </p>
           </div>
         </div>
