@@ -7,6 +7,8 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 import Auth from "./pages/Auth/Auth";
 import OneModal from "./pages/ResetPassword/OneModal/OneModal";
 import SecondModal from "./pages/ResetPassword/SecondModal/SecondModal";
+import ThridModal from "./pages/ResetPassword/ThridModal/ThridModal";
+import NewPassword from "./pages/ResetPassword/NewPassword/NewPassword";
 axios.defaults.baseURL = import.meta.env.VITE_API_BASE_URL;
 axios.defaults.withCredentials = true;
 
@@ -20,6 +22,8 @@ function App() {
         <Route path="/auth" element={<Auth />} />
         <Route path="/reset-to-email" element={<OneModal />} />
         <Route path="/success-to-email" element={<SecondModal />} />
+        <Route path="/success-mail" element={<ThridModal />} />
+        <Route path="/new-password" element={<NewPassword />} />
       </Routes>
     </Router>
     </GoogleOAuthProvider>
